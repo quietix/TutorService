@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <h1>Форма для додавання викладача</h1>
+    <form>
+        <fieldset>
+
+          <legend>Особиста інформація</legend>
+          <label for="full_name">Повне ім'я:</label><br>
+          <input type="text" id="full_name" required placeholder="Прізвище Ім'я"><br><br>
+  
+          <label>Стать:  </label><br>
+          <input type="radio" id="select_male">
+          <label for="select_male">Чоловіча</label>
+          <input type="radio" id="select_female">
+          <label for="select_female">Жіноча</label><br><br>
+  
+          <label>Дата народження:  </label>
+          <input type="date" id="date_of_birth">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+          <legend>Контактна інформація</legend>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" placeholder="aaa@gmail.com"><br><br>
+
+          <label for="phone_num">Телефон:</label><br>
+          <input type="tel" id="phone_num">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+          <legend>Налаштування інтерфейсу</legend>
+          <label for="color">Оберіть колір фону:</label><br>
+          <input type="color" id="color">  
+
+        </fieldset>
+       
+        <br>
+
+        <fieldset>
+
+          <legend>Інформація про локацію</legend>
+          <label for="country">Оберіть країну:</label><br>
+          <select name="country">
+              <option value="">Оберіть країну</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="albania">Albania</option>
+              <option value="algeria">Algeria</option>
+              <option value="andorra">Andorra</option>
+              <option value="angola">Angola</option>
+              <option value="antigua-and-barbuda">Antigua and Barbuda</option>
+              <option value="argentina">Argentina</option>
+              <option value="armenia">Armenia</option>
+              <!-- add more options here -->
+          </select><br><br>
+          
+          <label for="city">Введіть назву міста:</label><br>
+          <input type="text" id="city">
+
+        </fieldset>
+
+        <br>
+        
+
+        <label for="city">Додаткова інформація:</label><br>
+        <textarea rows="5" cols="30" placeholder="Додаткова інформація"></textarea><br><br>
+
+        <table>
+            <tr>
+              <td>
+                <button type="submit" id="submit">Внести дані</button>
+              </td>
+              <td>
+                <button type="reset" id="reset">Очистити</button>
+              </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
