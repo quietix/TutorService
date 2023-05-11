@@ -1,22 +1,321 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-   <head itemscope itemtype="http://schema.org/WebSite">
-
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="msapplication-tap-highlight" content="no">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <title>Project</title>
-
-      <link rel="stylesheet" href="./css/app.css">
-
-   </head>
-
-   <body itemscope itemtype="http://schema.org/WebPage">
-
-      <script type="text/javascript" src="../build/app.js"></script>
-      
-  </body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Total page</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <section class="header">
+                <div class="header_upper">
+                    <div class="logo">Teachinder</div>
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Name, note or age to search">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <div class="header_lower">
+                    <nav class="nav-bar">
+                        <a class="nav-a" href="#">Statistics</a>
+                        <a class="nav-a" href="#">Favourites</a>
+                        <a class="nav-a" href="#">About</a>
+                        <a class="nav-a" href="#">Teachers</a>
+                    </nav>
+                    <a class="add-teacher-btn" href="#add-teacher-popup">Add teacher</a>
+                </div>
+            </section>
+            <hr>
+            <!-- Top Teachers section -->
+            <section class="top-teachers-section">
+                <div class="section-name top-teachers">Top Teachers</div>
+                <div class="selections">
+                    <div class="selection age-selection">
+                        <p class="selection-paragraph">Age:</p>
+                        <select>
+                            <option value="1">18-31</option>
+                            <option value="2">32-45</option>
+                            <option value="3">45-60</option>
+                            <option value="4">60-70</option>
+                            <option value="5">70+</option>
+                        </select>
+                    </div>
+                    <div class="selection region-selection">
+                        <p class="selection-paragraph">Region</p>
+                        <select>
+                            <option value="1">Europe</option>
+                            <option value="2">Asia</option>
+                            <option value="3">North America</option>
+                            <option value="4">South America</option>
+                            <option value="5">Africa</option>
+                            <option value="6">Australia</option>
+                            <option value="7">Other world</option>
+                        </select>
+                    </div>
+                    <div class="selection gender-selection">
+                        <p class="selection-paragraph">Gender</p>
+                        <select>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="filter filter1">
+                        <input id="male" type="checkbox" name="person" value="male">
+                        <label for="male">Only with photo</label>
+                    </div>
+                    <div class="filter">
+                        <input id="female" type="checkbox" name="person" value="female">
+                        <label for="female">Only favorites</label><br><br>
+                    </div>
+                </div>
+                <div class="profiles">
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile1.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Gaphiz</h3>
+                        <h3 class="surname-capture">Al Akhaf</h3>
+                        <h4 class="subject-capture">Chemistry</h4>
+                        <h5 class="country-capture">India</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile8.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Mariia</h3>
+                        <h3 class="surname-capture">Avramenko</h3>
+                        <h4 class="subject-capture">Math</h4>
+                        <h5 class="country-capture">Ukraine</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile2.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <div class="star">★</div>
+                        <h3 class="name-capture">Henadij</h3>
+                        <h3 class="surname-capture">Ostapenko</h3>
+                        <h4 class="subject-capture">Literature</h4>
+                        <h5 class="country-capture">Poland</h5>
+                    </figure>   
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile9.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Valeriia</h3>
+                        <h3 class="surname-capture">Nechyporenko</h3>
+                        <h4 class="subject-capture">Vocal</h4>
+                        <h5 class="country-capture">Belgium</h5>
+                    </figure>  
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile3.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <div class="star">★</div>
+                        <h3 class="name-capture">Pragg</h3>
+                        <h3 class="surname-capture">Rameshbabu</h3>
+                        <h4 class="subject-capture">Computer Science</h4>
+                        <h5 class="country-capture">Denmark</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile10.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Ari</h3>
+                        <h3 class="surname-capture">Tang</h3>
+                        <h4 class="subject-capture">Medicine</h4>
+                        <h5 class="country-capture">China</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="empty-avatar">A.M</div>
+                        <h3 class="name-capture">Anna</h3>
+                        <h3 class="surname-capture">Muzychuk</h3>
+                        <h4 class="subject-capture">Chess</h4>
+                        <h5 class="country-capture">Spain</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="empty-avatar">R.L</div>
+                        <h3 class="name-capture">Radoslaw</h3>
+                        <h3 class="surname-capture">Ljuboevic</h3>
+                        <h4 class="subject-capture">Physics</h4>
+                        <h5 class="country-capture">Poland</h5>
+                    </figure>
+                </div>
+            </section>
+            <hr>
+            <!-- Statistics section -->
+            <div class="statistics-section">
+                <div class="section-name statistics">Statistics</div>
+                <div class="table-container">
+                    <table class="statistics-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Speciality</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Nationality</th>
+                        </tr>
+                        <tr>
+                            <td>Daisy Alexander</td>
+                            <td>Chemistry</td>
+                            <td>28</td>
+                            <td>Female</td>
+                            <td>Vietnam</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Bradley</td>
+                            <td>Math</td>
+                            <td>26</td>
+                            <td>Female</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Rita Hart</td>
+                            <td>Art</td>
+                            <td>41</td>
+                            <td>Female</td>
+                            <td>Ireland</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan Jacobs</td>
+                            <td>Math</td>
+                            <td>32</td>
+                            <td>Male</td>
+                            <td>England</td>
+                        </tr>
+                        <tr>
+                            <td>Nathaniel White</td>
+                            <td>Computer Science</td>
+                            <td>37</td>
+                            <td>Male</td>
+                            <td>Austria</td>
+                        </tr>
+                        <tr>
+                            <td>Frank Medina</td>
+                            <td>English</td>
+                            <td>43</td>
+                            <td>Male</td>
+                            <td>Italy</td>
+                        </tr>
+                        <tr>
+                            <td>Ella Curtis</td>
+                            <td>Chess</td>
+                            <td>34</td>
+                            <td>Female</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Claire Simmmons</td>
+                            <td>Art</td>
+                            <td>38</td>
+                            <td>Female</td>
+                            <td>Netherlands</td>
+                        </tr>
+                        <tr>
+                            <td>Benjamin Knight</td>
+                            <td>Biology</td>
+                            <td>4</td>
+                            <td>Male</td>
+                            <td>Scotland</td>
+                        </tr>
+                        <tr>
+                            <td>Norma Rose</td>
+                            <td>Statistics</td>
+                            <td>36</td>
+                            <td>Female</td>
+                            <td>France</td>
+                        </tr>
+                    </table>
+                </div>
+                <nav class="pages-numeration-container">
+                    <a class="page-a" href="#">1</a>
+                    <a class="page-a" href="#">2</a>
+                    <a class="page-a" href="#">3</a>
+                    <a class="page-a dots" href="#">...</a>
+                    <a class="page-a" href="#">Last</a>
+                </nav>
+            </div>
+            <hr>
+            <!-- Favorites section -->
+            <div class="favorites-section">
+                <div class="section-name favorites">Favorites</div>
+                <div class="profiles-list">
+                    <div class="arrow left"></div>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile1.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Gaphiz</h3>
+                        <h3 class="surname-capture">Al Akhaf</h3>
+                        <h5 class="country-capture">India</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="empty-avatar">A.M</div>
+                        <h3 class="name-capture">Anna</h3>
+                        <h3 class="surname-capture">Muzychuk</h3>
+                        <h5 class="country-capture">Spain</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile3.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Pragg</h3>
+                        <h3 class="surname-capture">Rameshbabu</h3>
+                        <h5 class="country-capture">Denmark</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile10.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Ari</h3>
+                        <h3 class="surname-capture">Tang</h3>
+                        <h5 class="country-capture">China</h5>
+                    </figure>
+                    <figure class="profile">
+                        <div class="img-container">
+                            <img src="./images/profile2.jpg" alt="profile picture" height="125" width="125"/><br>
+                        </div>
+                        <h3 class="name-capture">Henadij</h3>
+                        <h3 class="surname-capture">Ostapenko</h3>
+                        <h5 class="country-capture">Poland</h5>
+                    </figure> 
+                    <div class="arrow right"></div>  
+                </div>
+            </div>       
+            <hr>   
+            <!-- Footer section -->
+            <div class="footer-section">
+                <div class="lorem-block">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nihil amet adipisci optio perferendis beatae sed. Nihil rem doloribus eveniet neque, impedit, assumenda sequi asperiores incidunt quibusdam corporis praesentium iste eius numquam esse. Possimus at unde quisquam nobis iure fuga tempore velit eum culpa ullam.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ratione et officia, asperiores quidem eaque aperiam commodi distinctio!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, quia rerum deleniti pariatur praesentium ipsa non incidunt eius.</p>
+                </div>
+                <div class="header_lower footer-lower">
+                    <nav class="nav-bar">
+                        <a class="nav-a" href="#">Statistics</a>
+                        <a class="nav-a" href="#">Favourites</a>
+                        <a class="nav-a" href="#">About</a>
+                        <a class="nav-a" href="#">Teachers</a>
+                    </nav>
+                    <a class="add-teacher-btn" href="#add-teacher-popup">Add teacher</a>
+                </div>
+            </div>    
+        </div>
+        <!-- Pop ups -->
+        <div id="add-teacher-popup" class="overlay">
+            <div class="popup1">
+                <div class="popup1-header">
+                    <h3>Add teacher</h3>
+                    <a class="close" href="#">&times;</a>   
+                </div>
+                .
+                <!-- <label for="name" class="name"></label>
+                <input type="text" id="name" placeholder="Enter name"> -->
+            </div>
+        </div> 
+    </body>
 </html>
