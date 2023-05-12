@@ -1,0 +1,109 @@
+@media screen and (max-width: 768px) {
+    * {
+        transition: all 1s;
+    }
+
+    /* Header */
+    body {
+        background-color: rgba(233, 71, 71, 0.222);
+        overflow-x: hidden;
+        min-width: 560px;
+    }
+
+    .header {
+        height: fit-content;
+        padding: 30px 30px 25px 30px;
+    }
+    
+    .header_upper {
+        margin: 0px 35px;
+        height: 50%;
+    }
+
+    .search-input::placeholder {
+        visibility: hidden;
+    }
+
+    .search-input {
+        width: 50%;
+    }
+
+    .search-input:hover {
+        width: 185px;
+    }
+
+    .header-lower {
+        padding: 0px 5px;
+        margin: 20px 35px 0 35px;
+        height: 50%;
+    }
+
+    .nav-a {
+        padding-top: 10px;
+        display: flex;
+    }
+
+    .nav-a-1 {
+        display: inline-block
+    }
+    
+    .nav-a-2 {
+        display: inline-block
+    }
+
+    .add-teacher-btn {
+        margin-right: 10%;
+    }
+
+    /* Selections */
+    .section {
+        min-width: 588px;
+        height: fit-content;
+    }
+
+    .selections {
+        margin-left: 0;
+        min-width: fit-content;
+    }
+
+    .selection {
+        border: none;
+        margin: 0 auto;
+    }
+
+    .filter {
+        border: none;
+        margin: 0 auto;
+    }
+
+    /* Profiles */
+    .profiles {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        max-height: fit-content;
+    }
+
+    /* Statistics */
+    .table-container {
+        margin: 0 20px;
+    }
+
+    .statistics-table th {
+        width: fit-content;
+    }
+
+    .lorem-block {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    /* Lower */
+    .footer-lower {
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        padding-top: 20px;
+    }
+}
