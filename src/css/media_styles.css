@@ -3,7 +3,6 @@
         transition: all 1s;
     }
 
-    /* Header */
     body {
         background-color: rgba(233, 71, 71, 0.222);
         overflow-x: hidden;
@@ -43,11 +42,7 @@
         display: flex;
     }
 
-    .nav-a-1 {
-        display: inline-block
-    }
-    
-    .nav-a-2 {
+    .nav-a-tmp-block {
         display: inline-block
     }
 
@@ -55,7 +50,6 @@
         margin-right: 10%;
     }
 
-    /* Selections */
     .section {
         min-width: 588px;
         height: fit-content;
@@ -76,7 +70,6 @@
         margin: 0 auto;
     }
 
-    /* Profiles */
     .profiles {
         margin-left: 0;
         margin-right: 0;
@@ -84,7 +77,6 @@
         max-height: fit-content;
     }
 
-    /* Statistics */
     .table-container {
         margin: 0 20px;
     }
@@ -98,7 +90,6 @@
         padding-right: 30px;
     }
     
-    /* Lower */
     .footer-lower {
         margin-bottom: 10px;
     }

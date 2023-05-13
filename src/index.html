@@ -10,8 +10,7 @@
     </head>
     <body>
         <div class="container">
-            <!-- Header -->
-            <section class="header">
+            <header class="header">
                 <div class="header_upper">
                     <div class="logo">Teachinder</div>
                     <div class="search-bar">
@@ -21,26 +20,25 @@
                 </div>
                 <div class="header-lower">
                     <nav class="nav-bar">
-                        <div class="nav-a-1">
+                        <div class="nav-a-tmp-block">
                             <a class="nav-a" href="#">Statistics</a>
                             <a class="nav-a" href="#">Favourites</a>
                         </div>
-                        <div class="nav-a-2">
+                        <div class="nav-a-tmp-block">
                             <a class="nav-a" href="#">About</a>
                             <a class="nav-a" href="#">Teachers</a>
                         </div>
                     </nav>
                     <a class="add-teacher-btn" href="#add-teacher-popup">Add teacher</a>
                 </div>
-            </section>
+            </header>
             <hr>
-            <!-- Top Teachers section -->
             <section class="section top-teachers-section">
                 <div class="section-name top-teachers">Top Teachers</div>
                 <div class="selections">
                     <div class="selection age-selection">
-                        <p class="selection-paragraph">Age:</p>
-                        <select>
+                        <label for="age-selection-elem" class="selection-paragraph">Age:</label>
+                        <select id="age-selection-elem">
                             <option value="1">18-31</option>
                             <option value="2">32-45</option>
                             <option value="3">45-60</option>
@@ -49,8 +47,8 @@
                         </select>
                     </div>
                     <div class="selection region-selection">
-                        <p class="selection-paragraph">Region</p>
-                        <select>
+                        <label for="region-selection-elem" class="selection-paragraph">Region</label>
+                        <select id="region-selection-elem">
                             <option value="1">Europe</option>
                             <option value="2">Asia</option>
                             <option value="3">North America</option>
@@ -61,8 +59,8 @@
                         </select>
                     </div>
                     <div class="selection gender-selection">
-                        <p class="selection-paragraph">Gender</p>
-                        <select>
+                        <label for="gender-selection-elem" class="selection-paragraph">Gender</label>
+                        <select id="gender-selection-elem">
                             <option value="1">Male</option>
                             <option value="2">Female</option>
                         </select>
@@ -83,76 +81,91 @@
                                 <img src="./images/profile1.jpg" alt="profile picture" height="125" width="125"/>
                             </a>
                         </div>
-                        <h3 class="name-capture">Gaphiz</h3>
-                        <h3 class="surname-capture">Al Akhaf</h3>
-                        <h4 class="subject-capture">Chemistry</h4>
-                        <h5 class="country-capture">India</h5>
+                        <figcaption>
+                            <div class="name-capture">Gaphiz</div>
+                            <div class="surname-capture">Al Akhaf</div>
+                            <div class="subject-capture">Chemistry</div>
+                            <div class="country-capture">India</div>
+                        </figcaption>
                     </figure>
                     <figure class="profile">
                         <div class="img-container">
                             <img src="./images/profile8.jpg" alt="profile picture" height="125" width="125"/>
                         </div>
-                        <h3 class="name-capture">Mariia</h3>
-                        <h3 class="surname-capture">Avramenko</h3>
-                        <h4 class="subject-capture">Math</h4>
-                        <h5 class="country-capture">Ukraine</h5>
+                        <figcaption>
+                            <div class="name-capture">Mariia</div>
+                            <div class="surname-capture">Avramenko</div>
+                            <div class="subject-capture">Math</div>
+                            <div class="country-capture">Ukraine</div>
+                        </figcaption>
                     </figure>
                     <figure class="profile">
                         <div class="img-container">
                             <img src="./images/profile2.jpg" alt="profile picture" height="125" width="125"/>
                         </div>
                         <div class="star">★</div>
-                        <h3 class="name-capture">Henadij</h3>
-                        <h3 class="surname-capture">Ostapenko</h3>
-                        <h4 class="subject-capture">Literature</h4>
-                        <h5 class="country-capture">Poland</h5>
+                        <figcaption>
+                            <div class="name-capture">Henadij</div>
+                            <div class="surname-capture">Ostapenko</div>
+                            <div class="subject-capture">Literature</div>
+                            <div class="country-capture">Poland</div>
+                        </figcaption>
                     </figure>   
                     <figure class="profile">
                         <div class="img-container">
                             <img src="./images/profile9.jpg" alt="profile picture" height="125" width="125"/>
                         </div>
-                        <h3 class="name-capture">Valeriia</h3>
-                        <h3 class="surname-capture">Nechyporenko</h3>
-                        <h4 class="subject-capture">Vocal</h4>
-                        <h5 class="country-capture">Belgium</h5>
+                        <figcaption>
+                            <div class="name-capture">Valeriia</div>
+                            <div class="surname-capture">Nechyporenko</div>
+                            <div class="subject-capture">Vocal</div>
+                            <div class="country-capture">Belgium</div>
+                        </figcaption>
                     </figure>  
                     <figure class="profile">
                         <div class="img-container">
                             <img src="./images/profile3.jpg" alt="profile picture" height="125" width="125"/>
                         </div>
                         <div class="star">★</div>
-                        <h3 class="name-capture">Pragg</h3>
-                        <h3 class="surname-capture">Rameshbabu</h3>
-                        <h4 class="subject-capture">Computer Science</h4>
-                        <h5 class="country-capture">Denmark</h5>
+                        <figcaption>
+                            <div class="name-capture">Pragg</div>
+                            <div class="surname-capture">Rameshbabu</div>
+                            <div class="subject-capture">Computer Science</div>
+                            <div class="country-capture">Denmark</div>
+                        </figcaption>
                     </figure>
                     <figure class="profile">
                         <div class="img-container">
                             <img src="./images/profile10.jpg" alt="profile picture" height="125" width="125"/>
                         </div>
-                        <h3 class="name-capture">Ari</h3>
-                        <h3 class="surname-capture">Tang</h3>
-                        <h4 class="subject-capture">Medicine</h4>
-                        <h5 class="country-capture">China</h5>
+                        <figcaption>
+                            <div class="name-capture">Ari</div>
+                            <div class="surname-capture">Tang</div>
+                            <div class="subject-capture">Medicine</div>
+                            <div class="country-capture">China</div>
+                        </figcaption>
                     </figure>
                     <figure class="profile">
                         <div class="empty-avatar">A.M</div>
-                        <h3 class="name-capture">Anna</h3>
-                        <h3 class="surname-capture">Muzychuk</h3>
-                        <h4 class="subject-capture">Chess</h4>
-                        <h5 class="country-capture">Spain</h5>
+                        <figcaption>
+                            <div class="name-capture">Anna</div>
+                            <div class="surname-capture">Muzychuk</div>
+                            <div class="subject-capture">Chess</div>
+                            <div class="country-capture">Spain</div>
+                        </figcaption>
                     </figure>
                     <figure class="profile">
                         <div class="empty-avatar">R.L</div>
-                        <h3 class="name-capture">Radoslaw</h3>
-                        <h3 class="surname-capture">Ljuboevic</h3>
-                        <h4 class="subject-capture">Physics</h4>
-                        <h5 class="country-capture">Poland</h5>
+                        <figcaption>
+                            <div class="name-capture">Radoslaw</div>
+                            <div class="surname-capture">Ljuboevic</div>
+                            <div class="subject-capture">Physics</div>
+                            <div class="country-capture">Poland</div>
+                        </figcaption>
                     </figure>
                 </div>
             </section>
             <hr>
-            <!-- Statistics section -->
             <div class="section statistics-section">
                 <div class="section-name statistics">Statistics</div>
                 <div class="table-container">
@@ -240,12 +253,11 @@
                     <a class="page-a" href="#">1</a>
                     <a class="page-a" href="#">2</a>
                     <a class="page-a" href="#">3</a>
-                    <a class="page-a dots" href="#">...</a>
+                    <p class="page-a dots">...</p>
                     <a class="page-a" href="#">Last</a>
                 </nav>
             </div>
             <hr>
-            <!-- Favorites section -->
             <div class="section favorites-section">
                 <div class="section-name favorites">Favorites</div>
                 <div class="profiles-list">
@@ -255,46 +267,55 @@
                             <div class="img-container">
                                 <img src="./images/profile1.jpg" alt="profile picture" height="125" width="125"/>
                             </div>
-                            <h3 class="name-capture">Gaphiz</h3>
-                            <h3 class="surname-capture">Al Akhaf</h3>
-                            <h5 class="country-capture">India</h5>
+                            <figcaption>
+                                <div class="name-capture">Gaphiz</div>
+                                <div class="surname-capture">Al Akhaf</div>
+                                <div class="country-capture">India</div>
+                            </figcaption>
                         </figure>
                         <figure class="profile">
                             <div class="empty-avatar">A.M</div>
-                            <h3 class="name-capture">Anna</h3>
-                            <h3 class="surname-capture">Muzychuk</h3>
-                            <h5 class="country-capture">Spain</h5>
+                            <figcaption>
+                                <div class="name-capture">Anna</div>
+                                <div class="surname-capture">Muzychuk</div>
+                                <div class="country-capture">Spain</div>
+                            </figcaption>
                         </figure>
                         <figure class="profile">
                             <div class="img-container">
                                 <img src="./images/profile3.jpg" alt="profile picture" height="125" width="125"/>
                             </div>
-                            <h3 class="name-capture">Pragg</h3>
-                            <h3 class="surname-capture">Rameshbabu</h3>
-                            <h5 class="country-capture">Denmark</h5>
+                            <figcaption>
+                                <div class="name-capture">Pragg</div>
+                                <div class="surname-capture">Rameshbabu</div>
+                                <div class="country-capture">Denmark</div>
+                            </figcaption>
                         </figure>
                         <figure class="profile">
                             <div class="img-container">
                                 <img src="./images/profile10.jpg" alt="profile picture" height="125" width="125"/>
                             </div>
-                            <h3 class="name-capture">Ari</h3>
-                            <h3 class="surname-capture">Tang</h3>
-                            <h5 class="country-capture">China</h5>
+                            <figcaption>
+                                <div class="name-capture">Ari</div>
+                                <div class="surname-capture">Tang</div>
+                                <div class="country-capture">China</div>
+                            </figcaption>
                         </figure>
                         <figure class="profile">
                             <div class="img-container">
                                 <img src="./images/profile2.jpg" alt="profile picture" height="125" width="125"/>
                             </div>
-                            <h3 class="name-capture">Henadij</h3>
-                            <h3 class="surname-capture">Ostapenko</h3>
-                            <h5 class="country-capture">Poland</h5>
+                            <figcaption>
+                                <div class="name-capture">Henadij</div>
+                                <div class="surname-capture">Ostapenko</div>
+                                <div class="country-capture">Poland</div>
+                            </figcaption>
                         </figure> 
                     </div>
                     <div class="arrow right"></div>  
                 </div>
             </div>       
             <hr>   
-            <!-- Footer section -->
             <div class="section footer-section">
                 <div class="lorem-block">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nihil amet adipisci optio perferendis beatae sed. Nihil rem doloribus eveniet neque, impedit, assumenda sequi asperiores incidunt quibusdam corporis praesentium iste eius numquam esse. Possimus at unde quisquam nobis iure fuga tempore velit eum culpa ullam.</p>
@@ -305,11 +326,11 @@
                 </div>
                 <div class="header-lower footer-lower">
                     <nav class="nav-bar">
-                        <div class="nav-a-1">
+                        <div class="nav-a-tmp-block">
                             <a class="nav-a" href="#">Statistics</a>
                             <a class="nav-a" href="#">Favourites</a>
                         </div>
-                        <div class="nav-a-2">
+                        <div class="nav-a-tmp-block">
                             <a class="nav-a" href="#">About</a>
                             <a class="nav-a" href="#">Teachers</a>
                         </div>
@@ -318,7 +339,6 @@
                 </div>
             </div>    
         </div>
-        <!-- Pop ups -->
         <div id="add-teacher-popup" class="overlay">
             <div class="popup1">
                 <div class="popup1-header">
@@ -391,7 +411,8 @@
                         <label for="city">Notes (optional)</label>
                         <textarea></textarea>
                     </div>
-                    
+
+                    <!-- TODO: change type to submit -->
                     <!-- type should be "submit" but I've left it as "reset"
                     in order to provide some interaction on popup -->
                     <button type="reset" id="submit">Add</button>
@@ -399,7 +420,6 @@
             </div>
         </div> 
 
-        <!-- Popup 2 -->
         <div id="popup2" class="overlay">
             <div class="popup_info_teacher">
                 <div class="popup_info_top">

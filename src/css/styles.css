@@ -1,4 +1,3 @@
-/* General */
 * {
     transition: all 1s;
 }
@@ -23,20 +22,15 @@ hr {
 .container {
     width: 100%;
     max-width: 1076px;
-    height: 2100px;
-    /* max-height: fit-content; */
+    height: fit-content;
     margin: 0 auto;
-    /* border: 1px solid black; */
 }
 
-/* Header */
 .header {
     width: 100%;
     height: 200px;
-    /* border: 1px solid black; */
 }
 
-/* Header upper */
 .header_upper {
     height: 50%;
     display: flex;
@@ -46,7 +40,6 @@ hr {
     margin: 0px 80px 0px 80px;
 }
 
-/* Logo */
 .logo {
     color:white;
     font-size: 3em;
@@ -58,7 +51,6 @@ hr {
     cursor: pointer;
 }
 
-/* Search bar */
 .search-bar {
     height: 35px;
 }
@@ -91,7 +83,6 @@ hr {
     color: #fcfcfc;
 }
 
-/* Header lower */
 .header-lower {
     height: 50%;
     display: flex;
@@ -101,7 +92,6 @@ hr {
     padding: 0px 80px 20px 80px;
 }
 
-/* Nav */
 .nav-bar {
     margin-left: 0px;    
 } 
@@ -114,11 +104,7 @@ hr {
     font-size: 1.2em;
 }
 
-.nav-a-1 {
-    display: inline;
-}
-
-.nav-a-2 {
+.nav-a-tmp-block {
     display: inline;
 }
 
@@ -126,7 +112,6 @@ hr {
     color: #cf4836;
 }
 
-/* Add-teacher button */
 .add-teacher-btn {
     width: 145px;
     height: 45px;
@@ -147,13 +132,11 @@ hr {
     color: #fcfcfc;
 }
 
-/* Top teacher section */
 .top-teachers-section {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(1fr, 2fr);
-    /* border: 3px solid aquamarine; */
     padding-bottom: 45px;
 }
 
@@ -161,7 +144,6 @@ hr {
     height: fit-content;
 }
 
-/* Selections */
 .section-name {
     grid-row: 1;
     justify-self: center;
@@ -178,7 +160,6 @@ hr {
     gap: 10px;
     height: 29px;
     margin: 0 0 0 85px;
-    /* border: 1px solid black; */
 }
 
 .selection {
@@ -221,7 +202,6 @@ hr {
     cursor: pointer;
 }
 
-/* Profiles */
 .profiles {
     grid-row: 3;
     margin-top: 53px;
@@ -255,7 +235,6 @@ hr {
     border: 4px solid #f99589;
 }
 
-/* Figure */
 .profile {
     width: 135;
     height: 245;
@@ -318,13 +297,11 @@ hr {
     font-size: 0.7em;
 }
 
-/* Statistics */
 .statistics-section {
     width: 100%;
-    height: 507px;
+    height: fit-content;
     display: grid;
-    grid-template-rows: min-content min-content min-content;
-    /* border: 3px solid aquamarine; */
+    grid-template-rows: repeat(3, min-content);
     padding-bottom: 0px;
     margin-bottom: 20px;
 }
@@ -333,7 +310,6 @@ hr {
     grid-row: 1;
 }
 
-/* Table */
 .table-container {
     grid-row: 2;
     margin: 0 85px;
@@ -391,7 +367,6 @@ hr {
     width: min-content;
 }
 
-/* Pages numeration */
 .pages-numeration-container {
     grid-row: 3;
     margin-top: 30px;
@@ -407,19 +382,18 @@ hr {
 
 .page-a.dots {
     color: #222222;
+    display: inline;
 }
 
 .page-a:hover {
     color: #10616d;
 }
 
-/* Favorites */
 .favorites-section {
     width: 100%;
     height: 360px;
     display: grid;
     grid-template-rows: min-content min-content;
-    /* border: 3px solid aquamarine; */
     padding-bottom: 0px;
     height: fit-content;
 }
@@ -470,13 +444,11 @@ hr {
     transform: rotate(135deg);
 }
 
-/* Footer */
 .footer-section {
     width: 100%;
     height: 245px;
     display: grid;
     grid-template-rows: min-content min-content;
-    /* border: 3px solid aquamarine; */
     padding-top: 30px;
     padding-bottom: 0px;
 }
@@ -498,7 +470,6 @@ hr {
     margin-left: 10px;
 }
 
-/* Pop ups */
 .overlay {
     position: fixed;
     top: 0;
@@ -524,14 +495,13 @@ hr {
     display: none;
 }
 
-/* Popup 1 */
 .popup1 {
     margin: 0;
     background: #fff;
     border-radius: 5px;
     position: relative;
-    height: auto;
-    width: 476px;
+    height: fit-content;
+    width: 33%;
     overflow: scroll;
     min-width: 380px;
 }
@@ -543,7 +513,7 @@ hr {
 .popup1-header {
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 8vh;
     width: 100%;
     background-color: #464547;
     color: white;
@@ -554,7 +524,7 @@ hr {
 
 .popup1-header h3 {
     font-size: 1.3em;
-    padding-left: 17px;
+    padding-left: 6%;
 }
 
 .popup1-header .close {
@@ -562,34 +532,33 @@ hr {
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    padding-right: 17px;
+    padding-right: 6%;
 }
 
-/* Form container */
 .form-container {
-    margin: 0 30px;
+    margin: 0 6%;
 }
 
 .area {
-    margin-top: 13px;
+    margin-top: 1.5vh;
     vertical-align: middle;
 }
 
 .name-area {
-    margin-top: 23px;
+    margin-top: 1.8vh;
 }
 
 .area label {
     padding: 0;
     margin: 0;
     display: block;
-    padding-bottom: 3px;
+    padding-bottom: 0.7vh;
     color: #777777;
 }
 
 .area input, select {
     display: block;
-    height: 30px;
+    height: 4.2vh;
     width: 100%;
     box-sizing: border-box;
 }
@@ -641,8 +610,8 @@ hr {
 }
 
 .area textarea {
-    width: 100%;
-    height: 97px;
+    width: 98.5%;
+    height: 13vh;
 }
 
 button[type='reset'] {
@@ -665,7 +634,6 @@ button[type='reset']:hover {
     color: #fcfcfc;
 }
 
-/* Popup 2 */
 .popup_info_teacher {
     background: #fff;
     width: 756px;
@@ -701,7 +669,7 @@ button[type='reset']:hover {
 }
 
 .close {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -783,10 +751,13 @@ button[type='reset']:hover {
 
 .popup_map p{
     color: #89b8cd;
-    border-bottom: dotted 1px blue;
+    border-bottom: dotted 1px #89b8cd;
 }
 
-/* Some other stuff */
+.popup_map p:hover {
+    cursor: pointer;
+}
+
 .gender-selection-popup {
     margin-top: 15px;
 }
