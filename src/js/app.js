@@ -1,6 +1,15 @@
-const testModules = require('./test-module');
-require('../css/app.css');
+// const testModules = require('./test-module');
+// require('../css/app.css');
+//
+// /** ******** Your code here! *********** */
+//
+// console.log(testModules.hello);
 
-/** ******** Your code here! *********** */
+import { showTask1 } from "./task1/task1.js";
+import {showTask2} from "./task2/task2.js";
 
-console.log(testModules.hello);
+/* __Run task1:__ */
+// showTask1()
+
+/* __Run task2:__ */
+// showTask2()
