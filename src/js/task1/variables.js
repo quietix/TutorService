@@ -1,9 +1,9 @@
-export let courses = [
+export const courses = [
     'Mathematics', 'Physics', 'English', 'Computer Science', 'Dancing', 'Chess',
     'Biology', 'Chemistry', 'Law', 'Art', 'Medicine', 'Statistics'
 ]
 
-export let words = [
+export const words = [
     'parking',
     'achievement',
     'tax',

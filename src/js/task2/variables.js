@@ -1,4 +1,4 @@
-export let callingCodes = {
+export const callingCodes = {
     'ukraine': '380',
     'afghanistan': '93',
     'albania': '355',

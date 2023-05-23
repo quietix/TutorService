@@ -5,7 +5,7 @@
 //
 // console.log(testModules.hello);
 
-import {showTask1, task1} from "./task1/task1.js";
+import {showTask1} from "./task1/task1.js";
 import {showTask2} from "./task2/task2.js";
 import {showTask3} from "./task3/task3.js";
 import {showTask4} from "./task4/task4.js";

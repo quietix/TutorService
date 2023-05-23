@@ -1,28 +1,16 @@
 import { randomUserMock, additionalUsers } from '../FE4U-Lab3-mock.js';
 import {
     refactorDict,
-    generateId,
-    generateFavorite,
-    generateColor,
-    generateCourse,
-    generateNote,
     prettyUsersPrint,
 } from './functions.js'
 
 export function task1(){
-    let newUsers = []
-    let IDs = []
+    const newUsers = []
+    const IDs = []
 
     for (let elemKey in randomUserMock) {
         let refactoredElem = refactorDict(randomUserMock[elemKey])
-
-        refactoredElem['id'] = generateId()
-        refactoredElem['favorite'] = generateFavorite()
-        refactoredElem['course'] = generateCourse()
-        refactoredElem['bd_color'] = generateColor()
-        refactoredElem['note'] = generateNote()
         IDs.push(refactoredElem['id'])
-
         newUsers.push(refactoredElem)
     }
 
@@ -39,6 +27,6 @@ export function task1(){
 }
 
 export function showTask1(){
-    let users = task1()
+    const users = task1()
     prettyUsersPrint(users)
 }

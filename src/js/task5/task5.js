@@ -4,10 +4,11 @@ import {prettyUsersPrint} from "../task1/functions.js";
 export function task5(usersList, searchingValue){
     let foundUsersList = []
     for (let i = 0; i < usersList.length; i++) {
-        if (usersList[i]?.full_name?.toLowerCase()?.includes(searchingValue?.toString()?.toLowerCase())){
+        const lowerSearchingValue = searchingValue?.toString()?.toLowerCase()
+        if (usersList[i]?.full_name?.toLowerCase()?.includes(lowerSearchingValue)){
             foundUsersList.push(usersList[i])
         }
-        else if (usersList[i]?.note?.toLowerCase()?.includes(searchingValue?.toString()?.toLowerCase())){
+        else if (usersList[i]?.note?.toLowerCase()?.includes(lowerSearchingValue)){
             foundUsersList.push(usersList[i])
         }
         else if (usersList[i]?.age?.toString()?.includes(searchingValue.toString())){
