@@ -30,10 +30,10 @@ export function task3(usersArr, filters){
 
 // Show task3 work
 export function showTask3(){
-    let users = task1()
+    const users = task1()
     // filters: [country: '<country>', age: [<ageMin>, <ageMax>], gender: '<male> or <female>', favorite: <true> or <false>]
-    let filteringOptions = { country: 'Germany', age: [0, 100], gender: 'female'}
-    let filteredUsers = task3(users, filteringOptions)
+    const filteringOptions = { country: 'Germany', age: [0, 100], gender: 'female'}
+    const filteredUsers = task3(users, filteringOptions)
     console.log('Filtering options:')
     prettyUsersPrint([filteringOptions])
     console.log('Result:\n')
